@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Jewel_Collector
 {
-    public abstract class Obstacle
+    public abstract class Jewell
     {
         public int X {get; set;}
         public int Y {get; set;}
