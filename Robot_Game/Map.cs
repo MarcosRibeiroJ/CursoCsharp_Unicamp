@@ -15,6 +15,12 @@ namespace Robot_Game
                     if(i == 0 && j == 0) {
                         cp[i, j] = new Robot();
                         Console.Write(cp[i, j].desenhar() + " ");
+                    } else if((i == 1 && j == 4) || (i == 2 && j == 5) || (i == 3 && j == 9) || (i == 5 && j == 9) || (i == 8 && j == 3)){
+                        cp[i, j] = new Obstacle(ObstacleType.TREE);
+                        Console.Write(cp[i, j].desenhar() + " ");
+                    } else if(i == 5 && j < 7) {
+                        cp[i, j] = new Obstacle(ObstacleType.WATTER);
+                        Console.Write(cp[i, j].desenhar() + " ");
                     } else {
                         cp[i, j] = new Cell();
                         Console.Write(cp[i, j].desenhar() + " ");
